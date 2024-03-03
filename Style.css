@@ -19,4 +19,5 @@ body {
 .invitation-image {
     max-width: 100%;
     height: auto;
+    background-attachment: fixed;
 }
