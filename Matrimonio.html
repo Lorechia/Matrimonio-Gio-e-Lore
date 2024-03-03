@@ -1,77 +1,324 @@
+/* Codice Nuovo */
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matrimonio V 1.0 </title>
-  <style>
-    body {
-      margin: 20px 0 0; /* Aggiunge spazio sopra l'immagine "Invito" */
-      padding: 0;
-      background-image: url("https://raw.githubusercontent.com/Lorechi/Matrimonio-Gio-e-Lore/main/VistaDaSanFrancesco.jpeg");
-      background-size: cover; /* Adatta l'immagine di sfondo alla larghezza della finestra del browser */
-      background-size: 100% auto; /* Adatta l'immagine di sfondo alla larghezza della finestra del browser */
-      background-repeat: no-repeat; /* Evita la ripetizione dell'immagine di sfondo */
-      background-position: center;
-      background-attachment: fixed; /* Fissa l'immagine di sfondo durante lo scrolling */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh; /* Altezza minima del 100% della viewport */
-      font-family: "Clemente Light", Arial, sans-serif; /* Utilizza il font Clemente Light */
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovanna & Lorenzo's Wedding</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+
+	
+<style>
+      .leaf-4 {
+	width: 20px;
+	height: 20px;
+	border-radius: 0 20px;
+	background-color: rgba(255, 239, 184, 0.6);
+	transform: rotate(0deg);
+	          }
+        /* Personalizzazione del colore della classe btn-success */
+	  
+        .btn-custom-success {
+            color: #fff; /*Colore del testo */
+            background-color: rgb(144,153,9); /* Colore di sfondo personalizzato */
+            border: 1px solid rgb(144,153,9); /* Colore del bordo */
+        }
+
+        /* Personalizzazione del colore dell'hover della classe btn-success */
+        .btn-custom-success:hover {
+            background-color: rgb(144,153,9); /* Cambia il colore di sfondo al passaggio del mouse */
+            border: 1px solid rgb(144,153,9); /* Cambia il colore del bordo al passaggio del mouse */
+	}
+		
+        /* Dropwodn Menu */	
+	
+	.dropdown .dropbtn {
+		margin-left: 20px;
+		font-size: 100%;
+            /*border: none;
+            outline: none;*/
+            color: white;
+            padding: 14px 20px;
+		border-radius: 0 20px;
+            background-color: rgba(184, 155, 48, 1);
+		border: 1px solid rgba(184, 155, 48, 1); /* Cambia il colore della cornice a nero */
+        }
+	
+	.dropdown-empty .dropbtn-empty {
+		margin-left: 20px;
+		font-size: 100%;
+            /*border: none;
+            outline: none;*/
+            color: rgba(245,255,222,0.6);
+            padding: 14px 20px;
+		border-radius: 0 20px;
+            	background-color: rgba(245,255,222,0.6);;
+		border: 1px solid rgba(245,255,222,0.6); 
+        }
+	
+
+        .dropdown:hover .dropbtn:hover {
+            background-color: rgb(144,153,9); /* Cambia colore di sfondo al passaggio del mouse */
+            color: black; /* Cambia colore del testo al passaggio del mouse */
+        }
+
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+	font-size: 100%;
+	color: black;
+        background-color:rgba(245,255,222,1);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1000;
+	border-radius: 2;
     }
 
-    img {
-      max-width: 60%; /* Riduci la larghezza del 40% rispetto al massimo consentito */
-      height: auto;
-      border-radius: 10px; /* Puoi regolare la curvatura del bordo */
-      margin-bottom: 20px;
+	.dropdown-content a {
+	font-size: 100%;
+	font-family: 'Open Sans', serif;
+	color: white;
     }
 
-    .section {
-      width: 60%;
-      margin-top: 20px;
-      background-color: rgba(85, 107, 47, 0.8); /* Verde ulivo con trasparenza */
-      border-radius: 10px;
-      padding: 20px;
-      text-align: left; /* Allineamento del testo a sinistra */
-      color: #fff; /* Testo bianco */
+    .dropdown-content.show {
+        display: block;
     }
+	        /* Fine Navigation bar */	
+	
 
-    .section h2 {
-      font-size: 2em; /* Dimensione maggiore per il titolo "Dove?" */
-      font-weight: normal; /* Rimuove il grassetto */
-      margin-bottom: 10px;
-      margin-left: 10px; /* Rientro a sinistra */
-    }
- 
-    .section p {
-      font-size: 1em;
-      margin-bottom: 10px;
-    }
 
-    .section a {
-      display: block; /* Per centrare il testo "Portami lì" */
-      text-align: center; /* Allinea al centro */
-      color: #fff; /* Testo bianco */
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.2em; /* Dimensione del testo */
-    }
-  </style>
+.card-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+.custom-card-invite {
+    font-family: 'Open Sans', serif;
+    font-size: 100%;
+    border: 1px solid #ccc;
+	border-radius: 2;
+        background: rgba(245,255,222,0.6); /* rgba(255, 239, 184, 0.8); */
+    		/* background: linear-gradient(124deg, rgba(255, 239, 184, 0.8) 0%, rgba(255, 239, 184, 0.8) 100%);  */
+        flex-basis: 75%;
+            /* padding: 10px; */
+        margin: 5px;
+        }
+	
+.custom-card {
+    font-family: 'Open Sans', serif;
+    font-size: 100%;
+
+    border: 1px solid #ccc;
+            border-radius: 2;
+	
+            background: rgba(245,255,222,0.6); /* rgba(255, 239, 184, 0.8); */
+    		 /* background: linear-gradient(124deg, rgba(255, 239, 184, 0.8) 0%, rgba(255, 239, 184, 0.8) 100%);  */
+            flex-basis: 75%;
+            padding: 30px;
+            margin: 5px;
+        }
+body{
+    background: rgba(255, 239, 184, 0.8);
+    background: radial-gradient(circle, rgba(255, 239, 184, 0.8) 0%, rgba(255, 239, 184, 0.8) 100%);
+	font-size: 100%; /* Imposta la dimensione del testo al 100% rispetto alla dimensione predefinita del browser */
+}
+	
+h1{
+    font-family: 'Tangerine', serif;
+    font-size: 200%;
+    justify-content: center;
+}
+	
+.card-title{
+    font-family: 'Tangerine', serif;
+    font-size: 300%;
+}
+	
+.card-button {
+            display: flex;
+            justify-content: center;
+		font-size: 100%;
+	background: rgba(184, 155, 48, 1);
+	 border: 1px solid rgba(184, 155, 48, 1); /* Cambia il colore della cornice a nero */
+        }
+	
+.centered-title  {
+    	flex-grow: 1; /* Permette al titolo di espandersi per occupare lo spazio rimanente */
+	text-align: center; /* Centra il testo orizzontalmente */
+	font-size: 300%;
+}
+.leaf-crown  {
+    background-image: url("White Green Watercolor Leaves_v2 .png");
+    background-size: 100%;
+	background-attachment: fixed;
+}
+.simple-card {
+	display: flex;
+	position: right;
+	background-color: rgba(245,255,222,0.6);
+	align-items: center; /* Allinea verticalmente gli elementi al centro */
+	padding: 10px; /* Aggiungi spazio intorno al contenuto */
+}
+.header {
+    display: flex;
+    align-items: center; /* Allinea verticalmente gli elementi al centro */
+	justify-content: space-between; /* Distribuisci gli elementi alla massima distanza possibile l'uno dall'altro*/
+	background-color: rgba(245,255,222,0.8);
+	padding: 10px; /* Aggiungi spazio intorno al contenuto */
+
+}
+
+.centered-title-container {
+    text-align: center;
+	font-size: 150%;
+	/* display: flex;*/
+}
+
+</style>
+
 </head>
-<body>
-  <img src="Invito.jpeg" alt="Invito al matrimonio">
+	
+	
+<body>	
+	<div class="leaf-crown">
 
-  <div class="section">
-    <h2>Dove?</h2>
-    <h2>Ti aspettiamo per la cerimonia</h2>
-    <p>Loc. Tempio di San Francesco D'Assisi, 04024 Gaeta, LT</p>
-    <a href="https://maps.app.goo.gl/RcPGuANwL8hGCdQJ9?g_st=ic" target="_blank">Portami lì</a>
-   <h2>e per il ricevimento</h2>
-    <p>Loc. Grande albergo Miramare, 04023 Formia, LT</p>
-    <a href="https://maps.app.goo.gl/gtBJNk5UV8fyPqJfA" target="_blank">Portami lì</a>
-  </div>
+			    	<div class="header">
+					
+				<div class="dropdown">
+					<button onclick="toggleMenu()"  class="dropbtn">Menu</button>
+					<div id="myDropdown" class="dropdown-content">
+					        <a href="invitation.html" class="card-button btn btn-custom-success" >Home <br></a>.   /*copiare Invitation.html*/
+						<a href="Invito.jpeg" class="card-button btn btn-custom-success" >Scarica l'invito <br></a>
+					        <a href="https://maps.app.goo.gl/sFzf7XQAyS7o8QHN8" class="card-button btn btn-custom-success" >Location <br></a>
+					        <a href="programma.html" class="card-button btn btn-custom-success" >Programma <br></a>
+					      /*  <a href="https://forms.gle/qi2vRx5AizGVNZWt9" class="card-button btn btn-custom-success" >Conferma partecipazione <br></a> */ /*creare google Form per conferma partecipazione*/
+						<a href="accomodations.html" class="card-button btn btn-custom-success" >Accomodations <br></a>  /* va copiato il link accomodations inserendo delle possibili case da prenotare (o forse no) */
+						<a href="sogni.html" class="card-button btn btn-custom-success" >Vuoi contribuire a realizzare i nostri sogni?</a> /* da inserire per legare l'iban */
+					</div>
+				</div>
+				<div class="centered-title-container">
+					<h1 class="centered-title-container">Giovanna & Lorenzo's Wedding V2.0</h1>
+				</div>
+				<div class="dropdown-empty">	
+					<a class="dropbtn-empty">    </a>
+				</div>
+				</div>
+
+
+
+	    
+    <div class="leaf-crown">	    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card custom-card-invite shadow">
+                    <img src="Invito.jpeg" alt="Giovanna e Lorenzo"></img>    
+                    </div></div>
+            <div class="col-md-12">
+                <div class="card custom-card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Vuoi conservare l'invito?</h5>
+                       <a  href="Invito.jpeg" class="card-button btn btn-custom-success">Clicca quì per salvarlo!</a>
+                    </div>
+                </div>
+            </div>
+		
+            <div class="col-md-12">
+                <div class="card custom-card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Ti Aspettiamo</h5>
+                        <p class="card-text">Per la cerimonia al Tempio di San Francesco d'Assisi, 04024 Gaeta, LT</p>
+                        <a href="https://maps.app.goo.gl/RcPGuANwL8hGCdQJ9?g_st=ic" class="card-button btn btn-custom-success">Portami lì!</a>
+                        <p class="card-text">Per il Ricevimento al Grande Albergo Miramare, 04023 Formia, LT</p>
+                        <a href="https://maps.app.goo.gl/gtBJNk5UV8fyPqJfA" class="card-button btn btn-custom-success">Portami lì!</a>
+                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="card custom-card shadow">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Ok mi aspettate, ma Quando?</h5>
+                        <p class="card-text"> 6 Settembre 2024 alle 15</p>
+			<p class="card-text"> La cerimonia inizierà alle ore 15 presso il Tempio di San Francesco </p>
+			<p class="card-text"> Il ricevimento avrà inizio alle ore 18 al Miramare, se il clima ci supporta aperitivo e post cena si svolgeranno all'aperto, ladyes ricordate qualcosa per, pur rimanendo splendide, non soffrire il freddo</p>
+                        <a  href="programma.html" class="card-button btn btn-custom-success">Guarda il programma completo!</a> /*creare un programma per la giornata*/
+                    </div>
+                </div>    
+            </div>
+
+            <div class="col-md-12">
+                <div class="card custom-card shadow">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Sarai dei nostri?</h5>
+                        <p class="card-text">Facci sapere se ci sarai e se hai esigenze alimentari particolari. Avvisaci entro il 1 di Agosto!</p>
+                        <a  href="https://forms.gle/qi2vRx5AizGVNZWt9" class="card-button btn btn-custom-success">Conferma partecipazione</a>
+                    </div>
+                </div>  
+            </div>
+		
+            <div class="col-md-12">
+                <div class="card custom-card shadow">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Cerchi un posto dove restare a dormire?</h5>
+                        <p class="card-text">Segui il link sotto per una lista di posti suggeriti nelle vicinanze. Se hai difficoltà o vuoi un consiglio, contattaci!</p>
+                        <a  href="accomodations.html" class="card-button btn btn-custom-success">Accomodations</a>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-md-12">
+                <div class="card custom-card shadow">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Puoi Contribuire a realizzare i nostri sogni</h5>
+                        <a  href="sogni.html" class="card-button btn btn-custom-success">passando da qui</a>
+                    </div>
+                </div>    
+            </div>
+	</div>
+	</div>
+        </div>
+        
+    </div>
+    </div>
+<script>
+		    /* Funzione per aprire e chiudere il menu */
+			function toggleMenu() {
+   				console.log("Menu toggled");				
+			    var dropdown = document.getElementById("myDropdown");
+			    if (dropdown.classList.contains("show")) {
+			        dropdown.classList.remove("show");
+			    } else {
+			        dropdown.classList.add("show");
+			    }
+			}
+		
+		    /* Chiudi il menu se l'utente fa clic altrove nella pagina */
+		    window.onclick = function(event) {
+		        if (!event.target.matches('.dropbtn')) {
+		            var dropdowns = document.getElementsByClassName("dropdown-content");
+		            var i;
+		            for (i = 0; i < dropdowns.length; i++) {
+		                var openDropdown = dropdowns[i];
+		                if (openDropdown.classList.contains('show')) {
+		                    openDropdown.classList.remove('show');
+		                }
+		            }
+		        }
+		    }
+</script>
+
+
 </body>
 </html>
