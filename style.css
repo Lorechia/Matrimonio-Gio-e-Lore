@@ -176,9 +176,10 @@ h1{
 	font-size: 300%;
 }
 .leaf-crown  {
-    background-image: url("VistaDaSanfrancesco.jpeg");
+    background-image: url("VistaDaSanFrancesco.jpeg");
     background-size: 100%;
-	background-attachment: scroll;
+	background-attachment: fixed;
+	background-attachment: no-repeat;
 }
 .simple-card {
 	display: flex;
