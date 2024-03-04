@@ -146,8 +146,8 @@
             margin: 5px;
         }
 body{
-    background: rgba(255, 239, 184, 0.8);
-    background: radial-gradient(circle, rgba(255, 239, 184, 0.8) 0%, rgba(255, 239, 184, 0.8) 100%);
+    background: rgba(255, 255, 255, 0.8);
+    background: radial-gradient(circle, rgba(235, 220, 184, 0.8) 0%, rgba(255, 239, 184, 0.8) 100%);
 	font-size: 100%; /* Imposta la dimensione del testo al 100% rispetto alla dimensione predefinita del browser */
 }
 	
@@ -176,10 +176,9 @@ h1{
 	font-size: 300%;
 }
 .leaf-crown  {
-    background-image: url("VistaDaSanFrancesco.jpeg");
+    background-image: url("VistaDaSanFrancesc.jpeg");
     background-size: 100%;
-	background-attachment: scroll;
-	background-attachment: no-repeat;
+	background-attachment: fixed;
 }
 .simple-card {
 	display: flex;
