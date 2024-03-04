@@ -3,10 +3,10 @@
 	width: 20px;
 	height: 20px;
 	border-radius: 0 20px;
-	background-color: rgba(255, 239, 184, 0.6);
+	background-color: rgba(128, 0, 0, 0.3);
 	transform: rotate(0deg);
 	          }
-        /* Personalizzazione del colore della classe btn-success */
+        /* Personalizzazione del colore della classe btn-success 255, 239, 184, 0.6 */
 	  
         .btn-custom-success {
             color: #fff; /*Colore del testo */
@@ -16,8 +16,8 @@
 
         /* Personalizzazione del colore dell'hover della classe btn-success */
         .btn-custom-success:hover {
-            background-color: rgb(144,153,9); /* Cambia il colore di sfondo al passaggio del mouse */
-            border: 1px solid rgb(144,153,9); /* Cambia il colore del bordo al passaggio del mouse */
+            background-color: rgb(128,0,0,0.3); /* Cambia il colore di sfondo al passaggio del mouse */
+            border: 1px solid rgb(128,0,0,0.3); /* Cambia il colore del bordo al passaggio del mouse */
 	}
 		
         /* Dropwodn Menu */	
@@ -30,8 +30,8 @@
             color: white;
             padding: 7px 10px;
 		border-radius: 0 20px;
-            background-color: rgba(184, 155, 48, 1);
-		border: 0.5px solid rgba(184, 155, 48, 1); /* Cambia il colore della cornice a nero */
+            background-color: rgba(128,0,0,0.3);
+		border: 0.5px solid rgba(128,0,0,0.3); /* Cambia il colore della cornice a nero */
         }
 	
 	.dropdown-empty .dropbtn-empty {
@@ -39,16 +39,16 @@
 		font-size: 75%;
             /*border: none;
             outline: none;*/
-            color: rgba(235,184,178,0);
+            color: rgba(128,0,0,0);
             padding: 14px 20px;
 		border-radius: 0 20px;
-            	background-color: rgba(245,255,222,0);
-		border: 1px solid rgba(245,255,222,0); 
+            	background-color: rgba(235,184,178,0);
+		border: 1px solid rgba(235,184,178,0); 
         }
 	
 
         .dropdown:hover .dropbtn:hover {
-            background-color: rgb(144,153,9); /* Cambia colore di sfondo al passaggio del mouse */
+            background-color: rgb(235,184,178); /* Cambia colore di sfondo al passaggio del mouse */
             color: black; /* Cambia colore del testo al passaggio del mouse */
         }
 
