@@ -18,15 +18,20 @@
 
 
 <style>
-    /* Aggiungi stili se necessario */
+    /* Stili per il messaggio di rotazione */
     .rotate-message {
-        display: none;
+        display: block;
         text-align: center;
-        background-color: #fff;
-        padding: 10px;
-        font-size: 16px;
-        font-family: 'Open Sans', sans-serif;
-        color: #333;
+        background-color: #3498db; /* Colore di sfondo */
+        color: #ffffff; /* Colore del testo */
+        padding: 20px;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif; /* Font elegante e moderno */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
     }
 
     .rotate-icon {
@@ -36,7 +41,7 @@
 
     @media only screen and (max-width: 768px) {
         .rotate-message {
-            display: block;
+            display: none;
         }
     }
 </style>
@@ -51,14 +56,27 @@
 <body>	
 
 
- <div class="rotate-message">
+ 
+<!-- Il resto del tuo codice HTML -->
+
+    <div class="rotate-message" id="rotateMessage">
         <i class="fas fa-mobile-alt rotate-icon"></i>
-        <p>Ruota il tuo celllare per leggere al meglio</p>
+        <p>Ruota il tuo cellulare per una corretta visualizazione</p>
     </div>
 
     <!-- Il resto del tuo codice HTML -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script>
+        window.addEventListener("orientationchange", function() {
+            var rotateMessage = document.getElementById("rotateMessage");
+            if (window.orientation === 0 || window.orientation === 180) {
+                rotateMessage.style.display = "block";
+            } else {
+                rotateMessage.style.display = "none";
+            }
+        });
+    </script>
 
 
 
