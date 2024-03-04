@@ -69,7 +69,7 @@
 
 	.dropdown-content a {
 	font-size: 100%;
-	font-family: 'Open Sans', serif;
+	font-family: 'Open Sans', cursive;
 	color: black;
     }
 
@@ -85,7 +85,7 @@
             flex-wrap: wrap;
         }
 .custom-card-invite {
-    font-family: 'Open Sans', serif;
+    font-family: 'Open Sans', cursive;
     font-size: 100%;
     border: 1px solid #ccc;
 	border-radius: 2;
@@ -101,7 +101,7 @@
 	justify-content: center;
 	align-items: center;
 	height: 100vmax;
-	font-family: 'Open Sans', serif;
+	font-family: 'Open Sans', cursive;
     	border: 1px solid #ccc;
 	border-radius: 2;
 	background-image: url("RegaloBackground.png");
@@ -119,7 +119,7 @@
 	margin-left: 10px;
 	margin-right: 10px;
 	/* padding-top: 10vh; */
-    font-family: 'Tangerine', serif;
+    font-family: 'Playfair Display', cursive;
     font-size: 5vh;
 	color: #627636;
 }
@@ -133,7 +133,7 @@
 
 
 .custom-card {
-    font-family: 'Open Sans', serif;
+    font-family: 'Open Sans', cursive;
     font-size: 100%;
 
     border: 1px solid #ccc;
@@ -152,13 +152,13 @@ body{
 }
 	
 h1{
-    font-family: 'Tangerine', serif;
+    font-family: 'Playfair Display', cursive;
     font-size: 200%;
     justify-content: center;
 }
 	
 .card-title{
-    font-family: 'Tangerine', serif;
+    font-family: 'Playfair Display', cursive;
     font-size: 300%;
 }
 	
