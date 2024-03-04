@@ -191,7 +191,7 @@ h1{
     display: flex;
     align-items: center; /* Allinea verticalmente gli elementi al centro */
 	justify-content: space-between; /* Distribuisci gli elementi alla massima distanza possibile l'uno dall'altro*/
-	background-color: rgba(245,255,222,0.8);
+	background-color: rgba(128,0,0,0.8);
 	padding: 10px; /* Aggiungi spazio intorno al contenuto */
 
 }
