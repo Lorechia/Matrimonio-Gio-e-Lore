@@ -117,7 +117,21 @@ h1{
     
 }
 </style>
+
+	
 <body >
+	
+	<script>
+        function copyTextToClipboard() {
+            var textarea = document.getElementById("textToCopy");
+            textarea.select();
+            document.execCommand("copy");
+
+            alert("Testo copiato!");
+        }
+
+        }
+    </script>
     <div class="leaf-crown">
     <div>
         <div class="simple-card">
@@ -156,17 +170,6 @@ h1{
         	<img src="IMG_2025.jpeg" alt="Vi aspettiamo!">
     	</div>
 
-	<script>
-        function copyTextToClipboard() {
-            var textarea = document.getElementById("textToCopy");
-            textarea.select();
-            document.execCommand("copy");
-
-            alert("Testo copiato!");
-        }
-
-        }
-    </script>
 	
 </body>
 </html>
